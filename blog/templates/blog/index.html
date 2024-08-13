@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Home Page</h2>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">İmages</a></li>
+    </ul>
+    <h2>home page</h2>
+
+{% endblock %}
