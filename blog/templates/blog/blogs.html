@@ -5,11 +5,29 @@
 {% endblock %}
 
 {% block content %}
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Blogs</a></li>
-        <li><a href="">İmages</a></li>
-    </ul>
-    <h2>blogs</h2>
+
+
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-3">
+
+            {% include 'partials/_categories.html' %}
+
+        </div>
+        <div class="col-9">
+
+            <h1>All Blogs</h1>
+            <hr>
+
+            {% include 'blog/partials/_blog.html'%}
+            {% include 'blog/partials/_blog.html'%}
+            {% include 'blog/partials/_blog.html'%}
+            {% include 'blog/partials/_blog.html'%}
+            {% include 'blog/partials/_blog.html'%}
+            
+        </div>
+    </div>
+</div>
 
 {% endblock %}
