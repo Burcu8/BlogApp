@@ -14,8 +14,11 @@
 {% block content %}
     
     <h2>home page</h2>
+    
 
-    <img src="{% static 'img/python-django.jpg.webp' %}" alt="" width="300">
 
 {% endblock %}
 
+{% block js_files %} 
+    <script src="{% static 'blog/js/script.js' %}"></script>
+{%endblock%} 
